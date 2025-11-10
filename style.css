@@ -1,0 +1,116 @@
+/*----------------------------###| Start page |###--------------------------*/
+html,
+body {
+  height: 100%;
+}
+
+#ind {
+  background-image: url(Images/PlainsBiome.webp);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+main {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  max-width: 1500px;
+  height: 15vw;
+  justify-content: center;
+  /*border: 2px red solid;*/
+}
+
+#btn {
+  background-color: goldenrod;
+  border-color: aqua;
+  border-style: solid;
+  max-height: fit-content;
+  border-radius: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#play {
+  font-size: 5vh;
+  font-family: fantasy;
+}
+/*-----------------------------###| Main Page |###-------------------------*/
+
+#all {
+  background-image: url(Images/PlainsBiome.webp);
+  display: flex;
+  /*border-style: solid;*/
+}
+
+/*vvv Left, Center, Right, vvv*/
+.lcr {
+  /*border-style: solid;*/
+  flex-direction: column;
+  flex-grow: 3;
+}
+
+#left {
+  border-width: 4px;
+  /*border-color: brown;*/
+}
+#center {
+  border-width: 4px;
+  /*border-color: rgb(149, 164, 80);*/
+}
+#right {
+  border-width: 4px;
+  /*border-color: rgb(105, 45, 208);*/
+}
+
+.stat {
+  display: flex;
+}
+
+.buy {
+  display: flex;
+}
+
+#bottom {
+  display: flex;
+}
+
+#buytroop {
+  font-size: large;
+  max-height: 40px;
+}
+
+span {
+  font-size: 25px;
+}
+#buymine {
+  font-size: large;
+}
+/*------------------------------###| skill tree |###---------------------------*/
+
+#menue {
+  display: flex;
+}
+.inside {
+  display: flex;
+  flex-direction: column;
+}
+
+/*-------------------------------###| 10 troops |###-----------------------------*/
+#tenx {
+  display: none;
+}
+
+/*------------------------------###| unlocking |###-----------------------------*/
+.locked {
+  opacity: 30%;
+}
+.unlocked {
+  opacity: 100%;
+}
+.bought {
+  background-color: green;
+}
+
+#this {
+  color: blue;
+}

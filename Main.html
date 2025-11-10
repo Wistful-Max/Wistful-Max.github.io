@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main page</title>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="all">
+    <div class="lcr" id="left">
+      <h1>Produce</h1>
+      <div class="buy">
+        <button id="buytroop" onclick="troop()">buy troop for:</button>
+        <span>2</span>
+      </div>
+      <div class="buy">
+        <button id="buymine" onclick="mine()">buy goldmine for:</button>
+        <span>2</span>
+      </div>
+      <div class="buy">
+        <button id="tenx" onclick="tens()">Buy 10 soldiers for</button>
+        <span>8</span>
+      </div>
+      <div id="bottom">
+        <div id="next">
+          <button id="butt" onclick="klick()">Free robux</button>
+          <h3 id="counter">0</h3>
+        </div>
+      </div>
+      <div>
+        <button popovertarget="popup">Skilltree</button>
+        <div popover id="popup" id="skilltree">
+          <div id="top">
+            <h1>Skilltree</h1>
+          </div>
+          <div id="menue">
+            <div class="inside">
+              <div class="grid">
+                <button id="bundle" onclick="uppgrade1()">buy bundles</button>
+              </div>
+              <div class="grid">
+                <button onclick="uppgrade2()" class="row2">uppgrade 2</button>
+              </div>
+              <div class="grid">
+                <button class="row3">uppgrade 3</button>
+              </div>
+              <div class="grid">
+                <button class="row4">uppgrade 4</button>
+              </div>
+            </div>
+            <div id="inside">
+              <div class="grid">
+                <button class="row1">uppgrade 1</button>
+              </div>
+              <div class="grid">
+                <button class="row2">uppgrade 2</button>
+              </div>
+              <div class="grid">
+                <button class="row3">uppgrade 3</button>
+              </div>
+              <div class="grid">
+                <button class="row4">uppgrade 4</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lcr" id="center">
+      <h1>Your stats</h1>
+      <div class="stat">
+        <h2>HP:</h2>
+        <h2 id="health">100</h2>
+      </div>
+      <div class="stat">
+        <h2>Gold:</h2>
+        <h2 id="goldAmount">50</h2>
+      </div>
+      <div class="stat">
+        <h2>Troops:</h2>
+        <h2 id="troopAmount">0</h2>
+      </div>
+      <div class="stat">
+        <h2>Passive gold per turn:</h2>
+        <h2 id="manyMines">0</h2>
+      </div>
+      <div class="stat">
+        <button id="round" onclick="newRound()">Next round</button>
+      </div>
+      <div class="stat">
+        <h2>round numbers:</h2>
+        <h2 id="roundNM">0</h2>
+      </div>
+    </div>
+    <div class="lcr" id="right">
+      <h1>Enemy stats</h1>
+      <div class="stat">
+        <h2>enemy troops:</h2>
+        <h2 id="enemies">10</h2>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
